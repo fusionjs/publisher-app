@@ -5,3 +5,5 @@ COPY ./package.json ./package-lock.json /
 WORKDIR /
 
 RUN npm ci
+
+CMD ["npm", "start"]
