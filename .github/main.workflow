@@ -13,7 +13,7 @@ action "Deploy to Now" {
   needs = ["Master"]
   env = {
     APP_NAME = "publisher-ci"
-    APP_URL = "publisher-app.now.sh"
+    APP_ID = "@publisher/app"
   }
   secrets = [
     "NOW_TOKEN",
