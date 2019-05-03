@@ -12,8 +12,8 @@ action "Deploy to Now" {
   uses = "./deploy"
   needs = ["Master"]
   env = {
-    APP_NAME = "publisher-ci"
-    APP_ID = "@publisher/app"
+    NOW_ALIAS = "publisher-ci.now.sh"
+    NOW_PROJECT = "@publisher/app"
   }
   secrets = [
     "NOW_TOKEN",
