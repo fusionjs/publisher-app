@@ -1,6 +1,9 @@
 {
   "name": "@publisher/app",
   "private": true,
+  "scripts": {
+    "start": "probot run"
+  },
   "dependencies": {
     "probot": "^9.2.10"
   }
