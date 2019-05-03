@@ -1,11 +1,13 @@
-FROM node:12
+FROM node:lts
+
+LABEL "com.github.actions.name"="Deploy to Now"
+LABEL "com.github.actions.icon"="upload-cloud"
+LABEL "com.github.actions.color"="black"
+
+RUN yarn global add now@11.0.6
 
 COPY ./package.json ./package-lock.json /
 
 WORKDIR /
 
-RUN npm ci
-
-EXPOSE 3000
-
-CMD ["npm", "start"]
+ENTRYPOINT ["/deploy.sh"]
