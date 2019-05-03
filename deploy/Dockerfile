@@ -1,6 +1,7 @@
 FROM node:lts
 
 LABEL "com.github.actions.name"="Deploy to Now"
+LABEL "com.github.actions.description"="Deploy to Now.sh"
 LABEL "com.github.actions.icon"="upload-cloud"
 LABEL "com.github.actions.color"="black"
 
