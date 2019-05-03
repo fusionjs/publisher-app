@@ -14,12 +14,12 @@ action "Deploy to Now" {
   env = {
     NOW_ALIAS = "publisher-ci.now.sh"
     NOW_PROJECT = "publisher-app"
+    NOW_TEAM = "Publisher"
   }
   secrets = [
     "NOW_TOKEN",
-    "NOW_TEAM",
     "WEBHOOK_SECRET",
-    "APP_ID",
     "PRIVATE_KEY",
+    "APP_ID",
   ]
 }
