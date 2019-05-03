@@ -1,0 +1,7 @@
+{
+  "name": "@publisher/app",
+  "private": true,
+  "dependencies": {
+    "probot": "^9.2.10"
+  }
+}
