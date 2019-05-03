@@ -6,7 +6,7 @@ LABEL "com.github.actions.color"="black"
 
 RUN yarn global add now@11.0.6
 
-COPY ./package.json ./package-lock.json /
+COPY ./package.json ./package-lock.json ./deploy.sh /
 
 WORKDIR /
 
