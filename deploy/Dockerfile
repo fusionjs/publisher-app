@@ -2,7 +2,7 @@ FROM node:12
 
 LABEL "com.github.actions.name"="Deploy to Now"
 LABEL "com.github.actions.icon"="upload-cloud"
-LABEL "com.github.actions.color"="purple"
+LABEL "com.github.actions.color"="black"
 
 RUN npm install --g now@11.0.6
 
