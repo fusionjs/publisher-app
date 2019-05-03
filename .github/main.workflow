@@ -14,7 +14,7 @@ action "Deploy to Now" {
   env = {
     NOW_ALIAS = "publisher-ci.now.sh"
     NOW_PROJECT = "publisher-app"
-    NOW_TEAM = "Publisher"
+    NOW_TEAM = "publisher"
   }
   secrets = [
     "NOW_TOKEN",
