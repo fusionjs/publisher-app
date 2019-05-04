@@ -12,7 +12,7 @@ action "Deploy to Now" {
   uses = "./deploy"
   needs = ["Master"]
   env = {
-    NOW_ALIAS = "publisher-ci.now.sh"
+    NOW_ALIAS = "publisher.now.sh"
     NOW_PROJECT = "publisher-app"
     NOW_TEAM = "publisher"
   }
