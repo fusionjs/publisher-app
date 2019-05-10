@@ -4,7 +4,13 @@
   "scripts": {
     "start": "probot run"
   },
+  "probot": {
+    "apps": [
+      "@publisher/probot-app"
+    ]
+  },
   "dependencies": {
+    "@publisher/probot-app": "0.0.0-rc.2",
     "probot": "^9.2.10"
   },
   "engines": {
