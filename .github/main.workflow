@@ -1,6 +1,6 @@
-workflow "Deploy" {
-  on = "push"
+workflow "Deploy handler" {
   resolves = ["Deploy to Now"]
+  on = "push"
 }
 
 action "Master" {
