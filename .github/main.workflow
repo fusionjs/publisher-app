@@ -12,9 +12,9 @@ action "Deploy to Now" {
   uses = "./deploy"
   needs = ["Master"]
   env = {
-    NOW_ALIAS = "publisher.now.sh"
     NOW_PROJECT = "publisher-app"
-    NOW_TEAM = "publisher"
+    NOW_ALIAS = "publisher-fusion.now.sh"
+    NOW_TEAM = "fusionjs"
   }
   secrets = [
     "NOW_TOKEN",
