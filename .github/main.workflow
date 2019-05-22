@@ -1,4 +1,4 @@
-workflow "Deploy handler" {
+workflow "Deploy" {
   resolves = ["Deploy to Now"]
   on = "push"
 }
