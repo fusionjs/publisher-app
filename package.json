@@ -10,7 +10,7 @@
     ]
   },
   "dependencies": {
-    "@publisher/probot-app": "0.1.6",
+    "@publisher/probot-app": "0.1.7",
     "probot": "^9.2.10"
   },
   "engines": {
