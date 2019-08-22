@@ -1,0 +1,22 @@
+on: push
+name: Deploy
+jobs:
+  master:
+    name: Master
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Master
+      uses: actions/bin/filter@master
+      with:
+        args: branch master
+    - name: Deploy to Now
+      uses: ./deploy
+      env:
+        APP_ID: ${{ secrets.APP_ID }}
+        NOW_ALIAS: publisher-fusion.now.sh
+        NOW_PROJECT: publisher-app
+        NOW_TEAM: fusionjs
+        NOW_TOKEN: ${{ secrets.NOW_TOKEN }}
+        PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+        WEBHOOK_SECRET: ${{ secrets.WEBHOOK_SECRET }}
